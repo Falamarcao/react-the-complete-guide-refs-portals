@@ -7,6 +7,7 @@ export default function Player() {
 
   const handleClick = (): void => {
     setPlayerName(inputRef.current!.value);
+    if (inputRef.current) inputRef.current.value = '';
   };
 
   return (
