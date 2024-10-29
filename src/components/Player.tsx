@@ -1,7 +1,7 @@
 import { ChangeEvent, useState } from 'react';
 
 export default function Player() {
-  const [playerName, setPlayerName] = useState<string | null>(null);
+  const [playerName, setPlayerName] = useState<string | undefined>(undefined);
   const [isSet, setIsSet] = useState<boolean>(false);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
